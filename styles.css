@@ -38,7 +38,8 @@ body {
 }
 
 .tab:hover {
-    background-color: #444; /* hover effect */
+    background-color: #444; /*
+        hover effect */
 }
 
 .content {
@@ -128,7 +129,6 @@ iframe {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-
 #modal-content {
     background-color: #fefefe;
     margin: 15% auto;
@@ -152,8 +152,14 @@ iframe {
 }
 
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .certifications {
@@ -250,6 +256,7 @@ p {
     content: "\2192"; /* Unicode arrow right character */
     margin-right: 5px;
 }
+
 /* Hide left section on small screens */
 @media screen and (max-width: 600px) {
     .sidebar {
@@ -288,11 +295,5 @@ p {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
     width: 80%;
-    animation: fadeInSlideUp 0.5s; /* Fade in and slide up animation */
+    animation: fadeIn;
 }
-
-@keyframes fadeInSlideUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-

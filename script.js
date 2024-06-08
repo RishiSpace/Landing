@@ -22,43 +22,13 @@ tabs.forEach((tab) => {
     });
 });
 
-// const cards = document.querySelectorAll('.card');
-//             const modal = document.getElementById('modal');
-//             const modalContent = document.getElementById('modal-content');
-//             const closeModal = document.querySelector('.close');
-
-//             cards.forEach(card => {
-//                 card.addEventListener('click', function() {
-//                     const file = card.getAttribute('data-file');
-//                     fetch(file)
-//                         .then(response => response.text())
-//                         .then(html => {
-//                             modal.style.display = 'block';
-//                             const modalText = document.getElementById('modal-text');
-//                             modalText.innerHTML = html;
-//                             modalText.className = 'modal-text'; // add the class to apply styles
-
-//                             // Close modal on outside click
-//                             window.addEventListener('click', function(event) {
-//                                 if (event.target === modal) {
-//                                     modal.style.display = 'none';
-//                                 }
-//                             });
-//                         });
-//                 });
-//             });
-
-//             closeModal.addEventListener('click', () => {
-//                 modal.style.display = 'none';
-//             });
-
 // Get the search input field
 const searchInput = document.getElementById("search-input");
 
 // Get the main container
 const mainContainer = document.querySelector("main");
 
-// // Get the article cards
+// Get the article cards
 const articleCards = document.querySelectorAll(".card");
 
 // Register the search input event listener

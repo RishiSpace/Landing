@@ -1,105 +1,110 @@
 /* Dark Theme */
 body {
-    background-color: #212121;
-    color: #eee8aa;
-    display: flex;
-    justify-content: center; /* Center content horizontally */
+  background-color: #212121;
+  color: #eee8aa;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  font-family: 'SegoeUI', sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  animation: fadeInSlideUp 0.5s; /* fade in and slide up animation */
 }
 
 .container {
-    width: 1205px; /* Limit width to approximately 505 pixels */
-    padding: 20px;
-    box-sizing: border-box; /* Include padding in width calculation */
+  width: 1205px; /* Limit width to approximately 505 pixels */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 /* Centered Heading 1 */
 h1 {
-    font-size: 72px;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s forwards;
+  font-size: 72px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
 }
 
 /* Italic Heading 2 */
 h2 {
-    font-size: 47px;
-    font-style: italic;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s forwards;
-    animation-delay: 0.2s; /* Delay for h2 animation */
+  font-size: 47px;
+  font-style: italic;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.2s; /* Delay for h2 animation */
 }
 
 /* Justified Heading 3 */
 h3 {
-    font-size: 33px;
-    text-align: justify;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s forwards;
-    animation-delay: 0.4s; /* Delay for h3 animation */
+  font-size: 33px;
+  text-align: justify;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.4s; /* Delay for h3 animation */
 }
 
 /* Justified Paragraph */
 p {
-    font-size: 21px;
-    text-align: justify;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s forwards;
-    animation-delay: 0.6s; /* Delay for paragraph animation */
+  font-size: 21px;
+  text-align: justify;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.6s; /* Delay for paragraph animation */
 }
 
 /* Circular Image */
 img.circular-cut {
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s forwards;
-    animation-delay: 0.6s; /* Delay for paragraph animation */
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.6s; /* Delay for paragraph animation */
 }
 
 /* Styled List */
 ul.certifications {
-    width: 600px; /* Width of the list */
-    margin: 0 auto; /* Center the list */
-    padding: 0;
-    list-style-type: none; /* Remove default list styles */
+  width: 600px; /* Width of the list */
+  margin: 0 auto; /* Center the list */
+  padding: 0;
+  list-style-type: none; /* Remove default list styles */
 }
 
 ul.certifications li {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s forwards;
-    animation-delay: 0.8s; /* Delay for list items animation */
-    font-size: 24px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.8s; /* Delay for list items animation */
+  font-size: 24px;
 }
 
 ul.certifications li::before {
-    content: "\2192"; /* Unicode arrow right character */
-    margin-right: 5px;
+  content: "\2192"; /* Unicode arrow right character */
+  margin-right: 5px;
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 .certifications {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s forwards;
-    animation-delay: 1s; /* Delay the animation for 1 second */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 1s; /* Delay the animation for 1 second */
 }
 
 .timeline {
@@ -186,33 +191,33 @@ ul.certifications li::before {
 
 @media screen and (max-width: 600px) {
   .timeline::after {
-    left: 31px;
+      left: 31px;
   }
 
   .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
   }
 
   .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
   }
 
-  .left::after, .right::after {
-    left: 15px;
+  .left::after,
+  .right::after {
+      left: 15px;
   }
 
   .right {
-    left: 0%;
+      left: 0%;
   }
 
   /* Hide left section on small screens */
   .left {
-    display: none;
+      display: none;
   }
 }
-

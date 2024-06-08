@@ -22,10 +22,44 @@
             justify-content: center; /* Centering content vertically */
             height: 100%; /* Full height */
         }
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+        .content {
+            flex: 1;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                flex-direction: row;
+                height: auto;
+                justify-content: space-around;
+            }
+            .tab {
+                font-size: 20px; /* Smaller font size for smaller screens */
+            }
+            .owner-name {
+                font-size: 28px; /* Smaller font size for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tab {
+                font-size: 16px; /* Even smaller font size for very small screens */
+            }
+            .owner-name {
+                font-size: 24px; /* Smaller font size for very small screens */
+            }
+        }
     </style>
 </head>
 <body>
-    
     <div class="container">
         <button class="toggle-button" onclick="toggleSidebar()">Show Sidebar</button>
         <div class="sidebar">
