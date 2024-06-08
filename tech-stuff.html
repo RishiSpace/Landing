@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Stuff</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <input type="search" id="search-input" class="search-bar" placeholder="Search articles...">
+    </header>
+    <main id="main-content">
+        <h1 style="text-align: center; font-size: 40px;">Tech Stuff</h1>
+        <div class="article-grid">
+            <div class="card" data-file="pages/win10.html">
+                <img src="images/w10d.jpg" alt="Win 10" class="card-image">
+                <h2 class="article-title" style="text-align: center;">Windows 10</h2>
+                <p class="article-summary" style="text-align: center;">Information on Windows 10</p>
+            </div>
+            <div class="card" data-file="pages/win11.html">
+                <img src="images/w11.jpg" alt="Win 11" class="card-image">
+                <h2 class="article-title" style="text-align: center;">Windows 11</h2>
+                <p class="article-summary" style="text-align: center;">Information on Windows 11</p>
+            </div>
+            <div class="card" data-file="pages/android.html">
+                <img src="images/android-header.jpg" alt="Android" class="card-image">
+                <h2 class="article-title" style="text-align: center;">Android</h2>
+                <p class="article-summary" style="text-align: center;">Information on Android</p>
+            </div>
+        </div>
+    </main>
+
+    <div id="modal" style="display:none;">
+        <div id="modal-content" class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-text" class="modal-text"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

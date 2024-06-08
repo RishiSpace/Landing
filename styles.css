@@ -1,0 +1,298 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: auto;
+    font-family: 'SegoeUI', sans-serif;
+    font-size: 12px;
+    color: #fff;
+    background-color: #212121; /* default theme color */
+    animation: fadeInSlideUp 0.5s; /* fade in and slide up animation */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    animation: fadeInSlideUp 0.5s; /* fade in and slide up animation */
+}
+
+.sidebar {
+    width: 15%;
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInSlideUp 0.5s; /* fade in and slide up animation */
+}
+
+.tab {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.5s; /* hover effect */
+}
+
+.tab:hover {
+    background-color: #444; /* hover effect */
+}
+
+.content {
+    width: 85%;
+    padding: 20px;
+    overflow: hidden;
+    animation: fadeInSlideUp 0.5s; /* fade in and slide up animation */
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+    animation: fadeInSlideUp 0.5s; /* fade in and slide up animation */
+}
+
+.search-bar {
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    float: right;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.5s; /* hover effect */
+}
+
+.search-bar:hover {
+    background-color: #444; /* hover effect */
+}
+
+.article-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    width: calc(25% - 20px);
+    float: left;
+    background-color: #333;
+    animation: fadeInSlideUp 0.5s; /* fade in and slide up animation */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.article-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.article-summary {
+    font-size: 14px;
+    color: #666;
+}
+
+#modal {
+    background-color: #212121; /* Change background color to #212121 */
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+#modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.certifications {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 1s; /* Delay the animation for 1 second */
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.circumference {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 1s; /* Delay the animation for 1 second */
+}
+
+.h1 {
+    font-size: 72px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 1.2s; /* Delay the animation for 1.2 seconds */
+}
+
+.h2 {
+    font-size: 47px;
+    font-style: italic;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 1.4s; /* Delay the animation for 1.4 seconds */
+}
+
+.h3 {
+    font-size: 33px;
+    text-align: justify;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 1.6s; /* Delay the animation for 1.6 seconds */
+}
+
+p {
+    font-size: 21px;
+    text-align: justify;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 1.8s; /* Delay the animation for 1.8 seconds */
+}
+
+.circular-image {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 2s; /* Delay the animation for 2 seconds */
+}
+
+.styled-list {
+    width: 600px; /* Width of the list */
+    margin: 0 auto; /* Center the list */
+    padding: 0;
+    list-style-type: none; /* Remove default list styles */
+}
+
+.styled-list li {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 2.2s; /* Delay the animation for 2.2 seconds */
+    font-size: 24px;
+}
+
+.styled-list li::before {
+    content: "\2192"; /* Unicode arrow right character */
+    margin-right: 5px;
+}
+/* Hide left section on small screens */
+@media screen and (max-width: 600px) {
+    .sidebar {
+        display: none !important;
+    }
+}
+
+.toggle-button {
+    display: none; /* Initially hide the button */
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.5s; /* Hover effect */
+}
+
+.toggle-button:hover {
+    background-color: #444; /* Hover effect */
+}
+
+/* Show button only when sidebar is hidden */
+.sidebar-hidden .toggle-button {
+    display: block;
+}
+
+/* CSS for modal */
+#modal-content {
+    background-color: #333; /* Match body color scheme */
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    width: 80%;
+    animation: fadeInSlideUp 0.5s; /* Fade in and slide up animation */
+}
+
+@keyframes fadeInSlideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
