@@ -29,6 +29,11 @@ function resizeCanvas() {
   }
 }
 
+window.addEventListener('resize', () => {
+  resizeCanvas();
+  initNeurons(); // Optional: reinit neuron layout on resize
+});
+
 // Draw a neuron with glowing effect
 function drawNeuron(x, y, glow) {
   ctx.beginPath();
@@ -81,3 +86,18 @@ function animate(t) {
 resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
 animate(0);
+
+// In script.js
+function adjustBlobScale() {
+  const container = document.querySelector('.name-container');
+  const ratio = window.innerHeight / window.innerWidth;
+
+  if (ratio > 1.8) {
+    container.style.transform = "scale(0.85)";
+  } else {
+    container.style.transform = "scale(1)";
+  }
+}
+
+window.addEventListener('resize', adjustBlobScale);
+window.addEventListener('load', adjustBlobScale);
